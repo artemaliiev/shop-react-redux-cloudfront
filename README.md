@@ -1,5 +1,12 @@
 # React-shop-cloudfront
 
+## Deployment URLs
+
+- **CloudFront URL**: https://dj152vd16r9by.cloudfront.net
+- **S3 Website URL**: http://artem-aliiev-shop-react-cloudfront.s3-website.eu-central-1.amazonaws.com/
+
+---
+
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
 
 - [Vite](https://vitejs.dev/) as a project bundler
