@@ -1,5 +1,33 @@
 # React-shop-cloudfront
 
+## Deployment URLs
+
+- **CloudFront URL**: https://d2fx6gs1d0rxfz.cloudfront.net
+- **S3 Website URL**: N/A (bucket is private, access via CloudFront only)
+
+## Deployment
+
+### Automated deployment with AWS CDK
+
+```bash
+# Bootstrap CDK (first time only)
+npx cdk bootstrap
+
+# Build + deploy infrastructure + upload to S3 + invalidate CloudFront cache
+npm run cdk:build:deploy
+
+# Synthesize CloudFormation template only
+npm run cdk:synth
+
+# Deploy infrastructure only
+npm run cdk:deploy
+
+# Destroy all infrastructure
+npm run cdk:destroy
+```
+
+---
+
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
 
 - [Vite](https://vitejs.dev/) as a project bundler
